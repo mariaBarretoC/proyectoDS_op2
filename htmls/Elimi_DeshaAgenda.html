@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar/Deshabilitar Agendamiento</title>
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <h1>Imperial Puppies</h1>
+            <ul class="nav-menu">
+                <li>
+                    <a href="/src/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/src/registro.html">Registro</a>
+                </li>
+                <li>
+                    <a href="/src/planes.html">Planes</a>
+                </li>
+                <li>
+                    <a href="/src/informe.html">Informes</a>
+                </li>
+                <li>
+                    <a href="/src/Configuraciones.html">Configuraciones</a>
+                </li>
+            </ul>
+            <ul class="nav_menu-right">
+                <li>
+                    <a href="#"> 
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Ingresar Datos -->
+        <div class="ingresoDatos">
+            <form action="/" class="formulario" >
+                <h1 class="title">Ingresar Propietario</h1>
+                <!-- FALA TIPODOC QUE ES COMBO BOX-->
+                <div class="input-Control">
+                    <label for="Nit Agendamiento">Nit Agendamiento</label>
+                    <input id="nitAgenda" name="nitAgenda" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Numero Documento de la persona">Numero Documento de la persona</label>
+                    <input id="NumDocPers" name="NumDocPers" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Numero Documento de la mascota">Numero Documento de la mascota</label>
+                    <input id="NumDocMas" name="NumDocMas" type="text"required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Fecha de Visita"> Fecha de Visita</label>
+                    <input id="fechaVisita" name="fechaVisita" type="date"required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Hora Visita">Hora Visita</label>
+                    <input id="horVisi" name="horVisi" type="time" required>
+                    <div class="error"></div>
+                </div>
+                <!-- falta medio Pago que es listaDesplegable-->
+                <div class="input-Control">
+                    <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
+                    <input id="FechaNac" name="fechaNac" type="date">
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Telefono">Telefono</label>
+                    <input id="Tel" name="tel" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Direccion">Direccion</label>
+                    <input id="Dire" name="Dire" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-Control">
+                    <label for="Email">Email</label>
+                    <input id="Email" name="Email" type="email" required>
+                    <div class="error"></div>
+                </div>
+                <!-- FALA SEXO QUE ES COMBO BOX-->
+                <div class="input-Control">
+                    <label for="Contraseña">Contraseña</label>
+                    <input id="Contraseña" name="Contraseña" type="password" required>
+                    <div class="error"></div>
+                </div>
+                <button id="button">Elimina</button>
+                <button id="button">Deshabilita</button>
+                <button id="button">Cancelar</button>
+
+            </form>
+        </div>
+        <!-- Contactos-->
+        <section class="social">
+            <p>Siguenos En Nuestras Redes Sociales o Escribenos Nosotros Te Asesoramos</p>
+            <p>TE ESPERAMOS A TI Y A TU PELUDITO</p>
+            <div class="links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

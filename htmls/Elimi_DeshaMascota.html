@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="eua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar/Deshabilitar Mascota</title>
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <h1>Imperial Puppies</h1>
+            <ul class="nav-menu">
+                <li>
+                    <a href="/src/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/src/registro.html">Registro</a>
+                </li>
+                <li>
+                    <a href="/src/planes.html">Planes</a>
+                </li>
+                <li>
+                    <a href="/src/informe.html">Informes</a>
+                </li>
+                <li>
+                    <a href="/src/Configuraciones.html">Configuraciones</a>
+                </li>
+            </ul>
+            <ul class="nav_menu-right">
+                <li>
+                    <a href="#"> 
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Ingresar Datos -->
+        <div class="ingresoDatos">
+            <form action="/" class="formulario">
+            <h1 class="title">Ingresar Mascota</h1>
+            <div class="input-Control">
+                <label for="Numero de Registro">Numero de Documento</label>
+                <input id="NumRegis" name="NumRegis" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Fecha de Nacimiento">Fecha de Nacimiento</label>
+                <input id="FechaNac" name="fechaNac" type="date">
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Lugar de Nacimiento">Lugar de Nacimiento</label>
+                <input id="LugarNac" name="LugarNac" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Peso">Peso (kg)</label>
+                <input id="Peso" name="Peso" type="text"required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Raza"> Raza</label>
+                <input id="Raza" name="Raza" type="text"required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Certificado Esterilizacion">Certificado Esterilizacion</label>
+                <input id="Esterilizacion" name="Esterilizacion" type="file" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Fecha de Esterilizacion">Fecha de Esterilizacion</label>
+                <input id="FechaEsterilizacion" name="FechaEsterilizacion" type="date">
+                <div class="error"></div>
+            </div>
+            <h4>Genero</h4>
+            <div class="radio">
+                <label for="Macho">Macho</label>blank
+                <input id="macho" name="Genero" type="radio" required>
+                <label for="Hembra">Hembra</label>
+                <input id="Hembra" name="Genero" type="radio" required>
+                <div class="error"></div>
+            </div>
+            <h4>Condicion Especial</h4>
+            <div class="radio">
+                <label for="SI">SI</label>
+                <input id="Si" name="condiSi" type="radio" required>
+                <label for="NO">NO</label>
+                <input id="No" name="condiNo" type="radio" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="CondiEspecial?">Si contiene condicion especial especifica cual es?</label>
+                <textarea id="Condi" name="CondiEspeci"></textarea>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="numDoc">Numero de Documento</label>
+                <input id="numDoc" name="numDoc" type="text" required>
+                <div class="error"></div>
+            </div>
+            <!-- Vacunas-->
+            <div class="input-Control">
+                <label for="Nit de Vacuna">Nit de Vacuna</label>
+                <input id="nitVacu" name="nitVacu" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Nombre de las vacunas">Nombre de las Vacunas</label>
+                <input id="nomVacu" name="nomVacu" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Fecha de Aplicacion">fecha de Aplicacion</label>
+                <input id="fechaAplica" name="fechaAplica" type="date" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-Control">
+                <label for="Subir Carnet">subir el carnet de vacuna</label>
+                <input id="SubiCarnet" name="SubiCarnet" type="File" required>
+                <div class="error"></div>
+            </div>
+            <button id="button">Eliminar</button>
+            <button id="button">Deshabilitar</button>
+            <button id="button">Cancelar</button>
+            </form>
+        </div>
+        <!-- Contactos-->
+        <section class="social">
+            <p>Siguenos En Nuestras Redes Sociales o Escribenos Nosotros Te Asesoramos</p>
+            <p>TE ESPERAMOS A TI Y A TU PELUDITO</p>
+            <div class="links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
