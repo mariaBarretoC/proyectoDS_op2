@@ -2,7 +2,7 @@
   "name": "proyectods_op2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/mariaBarretoC/proyectoDS_op2#readme",
   "dependencies": {
-    "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-myconnection": "^1.0.4",
@@ -26,6 +25,8 @@
     "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "express":"4.18.2",
+    "nodemon": "^2.0.20",
+    "mysql": "2.18.1"
   }
 }
