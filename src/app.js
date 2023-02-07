@@ -9,7 +9,7 @@ const port = process.env.PORT || 3050;
 
 const app = express();
 
-app.use(bodyParser().json());
+app.use(bodyParser.json());
 
 
 //connection 
