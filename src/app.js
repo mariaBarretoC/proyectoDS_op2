@@ -1,35 +1,18 @@
-const express = require('expresss');
-const mysql = require('mysql');
+app.set('port', process.end.PORT || 3001);
 
+//middlewares
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(epress.urlencoded({extended:false}));
+app.use(express.json());
 
-const bodyParser = require('bodyParserr');
-const Connection = require('mysql/lib/Connection');
-
-const port = process.env.PORT || 3050;
-
-const app = express();
-
-app.use(bodyParser.json());
-
-
-//connection 
-const connection = mysql.createConnect({
-    host: 'localhost',
-    user:'root',
-    password:'',
-    database:'guarderiacanina',
-});
-
-//check connection
-Connection.connect(error =>{
-    if(error)throw error;
-    console.log('Database server running!');
+//routes
+app.get('/', (req, res) => {
+    res.send('hello world');
 
 });
 
+app.listen(app.get,('port'),() =>{
+    console.log(`server on port ${('port')}`);
 
-app.listen(port,()=>
-    console.log('server running on port${port}'));
-
-
-
+});
